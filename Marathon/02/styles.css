@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vm;
+
+  background-color: #fbfffd;
+  display: grid; 
+  /* place-content: center; */
+  /* padding-top: 5rem; */
+  padding: 10% 5%;
+  overflow: hidden;
+}
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  height: 80vh;
+  flex-grow: 1;
+  /* margin: 0 auto; */
+}
+
+.rowHead {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height:fit-content;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-grow: 1;
+  width: 70%;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 20%;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 0;
+  color: rgb(39, 2, 107);
+  text-align: center;
+  font-weight: 600;
+}
+
+.item {
+  /* width: 10em; */
+  height: 3rem;
+  border: 1px solid #f7f6f7;
+  box-shadow: 4px 4px 4px rgba(37, 37, 37, 0.36);
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 0.8rem 0;
+  color: #202020;
+  text-align: center;
+  cursor: grab;
+  /* font-size:90%; */
+  /* white-space:pre-wrap; */
+}
+
+.back {
+  /* width: 10rem; */
+  height: 3.1rem;
+  border: 1px dashed;
+  border-radius: 20px;
+  background: none;
+  margin: 0.8rem 0;
+  color: #a474fc;   
+}
+
+.backStart {
+  color:#ff85e4;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 20%;
+  /* height: 66px; */
+}
+
+.placeholderStart {
+  width: 20%;
+  /* height: 66px; */
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+ }
+
+
+.start {
+  background: rgba(115, 223, 172, 0.36);
+  border: #af8ffc solid 2px;
+}
+
+.progress {
+  background: rgba(109, 227, 231, 0.36);
+  border: #af8ffc solid 2px;
+}
+
+.done {
+  background: rgba(153, 115, 223, 0.36);
+  border: #af8ffc solid 2px;
+}
+
+.pre {
+  background: none;
+  box-shadow: none;
+}
+
+.hold {
+  border:#fce9fd;
+  background: #fce9fd;
+}
+
+.item:hover {
+  border:#fce9fd;
+  background: #fce9fd;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border: #ff85e4 solid;
+  background-image: linear-gradient(rgb(41, 1, 65) 1px, transparent 1px);
+  background-size: 100% 0.7em;
+  
+}

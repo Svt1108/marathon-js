@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Secular+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --linkcolor:#166fe3;
+}
+
+body {
+  color: rgb(105, 105, 105);
+  font-family: 'Poppins', sans-serif;
+  /* height: 100vh;  */
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+.screen {}
+
+a {
+  color: rgb(70, 70, 70);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--linkcolor);
+}
+
+.start {
+  font-size: 1.5rem;
+  border-bottom: rgb(70, 70, 70) solid;
+  padding: 0.1rem;
+}
+
+.start:hover {
+  border-bottom: var(--linkcolor) solid; 
+}
+
+h1 {
+  line-height: 1.4;
+  font-size: 4em;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: linear-gradient(221.87deg, #fdd573 1%, #fdd573 128%);
+  margin: 0;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn {
+  background-color: transparent;
+  color: rgb(70, 70, 70) ;
+  cursor: pointer;
+  border: 2px solid rgb(70, 70, 70);
+  /* font-family: inherit; */
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  background-color: #C0C0C0;
+}
+
+.time-btn:hover {
+  border: 2px solid var(--linkcolor);
+  color: var(--linkcolor);
+}
+
+.hide {
+  opacity: 0;
+}
+
+.primary {
+  color: var(--linkcolor);
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 55vmin;
+  height: 55vmin;
+  background: #fff;
+  /* box-shadow: -8px -8px 20px #2A333D, 10px 7px 20px #475462; */
+  border-radius: 20px;
+  overflow: hidden;
+  border:rgb(70, 70, 70) solid 2px;
+}
+
+.circle {
+  /* background: linear-gradient(90deg, #16D9E3 0%, #30C7EC 47%, #46AEF7 100%); */
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
